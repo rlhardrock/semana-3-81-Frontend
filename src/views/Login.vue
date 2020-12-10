@@ -8,8 +8,8 @@
 
 import IntroLogin from '@/components/auth/IntroLogin.vue'
 
-export default {
-  components: { IntroLogin },
+export default {  
+    components: { IntroLogin },
     
 }
 </script>

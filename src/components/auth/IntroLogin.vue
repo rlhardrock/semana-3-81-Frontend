@@ -27,15 +27,13 @@
                 class="btn btn-success mb-3">Authenticate</button>
             </div>
         </form>
-
-    <pre>
-        {{login}}
-    </pre>
-
     </div>
 </template>
 
 <script>
+
+import Swal from 'sweetalert2'
+
 export default {
     name: 'IntroLogin',
     data(){
