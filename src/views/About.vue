@@ -1,5 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>JUDAS PRIEST</h1>
+    <p>Rock N' Roll Around The World !</p>
   </div>
 </template>
