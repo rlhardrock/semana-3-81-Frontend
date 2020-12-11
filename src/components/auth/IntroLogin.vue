@@ -26,6 +26,7 @@
                 type="submit" 
                 class="btn btn-success mb-3">Authenticate</button>
             </div>
+            <pre>{{login}}</pre>
         </form>
     </div>
 </template>
@@ -54,14 +55,29 @@ export default {
                 localStorage.setItem('jwt',token);
                 localStorage.setItem('user', JSON.stringify(user));
                 if(token){
-                    this.$route.push('/home');
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'Touch Down',
+                        showConfirmButton: false,
+                        timer: 1500,
+                        backdrop: `rgba(0,250,0,0.6)`
+                        })
+                    this.$router.push('/home');
                 }
-            }catch{
-                console.log(err.response);
+            }catch (e){
+                Swal.fire({
+                title: 'Encroachment !',
+                width: 600,
+                padding: '3em',
+                timer: 2500,
+                backdrop: `rgba(0,0,250,0.6)`
+                })
             }
         }
     }
 }
+
 </script>
 
 <style scoped>

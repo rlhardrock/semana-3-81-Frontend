@@ -12,9 +12,12 @@ const routes = [
     name: 'Login',
     component: () => import(/* webpackChunkName: "login" */ '@/views/Login.vue')
   },{
-    path: '/',
+    path: '/home',
     name: 'Home',
-    component: () => import(/* webpackChunkName: "home" */ '@/views/Home.vue')
+    component: () => import(/* webpackChunkName: "home" */ '@/views/Home.vue'),
+    meta:{
+      requiresAuth: true
+    }
   },
   {
     path: '/about',
@@ -33,5 +36,21 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 })
+
+router.beforeEach((to, from, next ) => {
+  if(to.matched.some(record => record.meta.requiresAuth)){
+    if (localStorage.getItem('jwt') === null){
+      next({
+        path: '/'
+      })
+    }else{
+      next();
+    }
+  }else{
+    next();
+  }
+})
+
+
 
 export default router

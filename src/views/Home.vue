@@ -1,14 +1,15 @@
 <template>
-  <div class="home">
+  <div>
+    <home-run></home-run>
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <Homerun></HomeRun>
+    
 
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+
 import HelloWorld from '@/components/HelloWorld.vue'
 import HomeRun from '@/components/HomeRun.vue'
 
