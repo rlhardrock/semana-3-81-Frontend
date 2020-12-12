@@ -56,9 +56,8 @@ export default {
                 localStorage.setItem('user', JSON.stringify(user));
                 if(token){
                     Swal.fire({
-                        position: 'top-end',
                         icon: 'success',
-                        title: 'TouchDown, Welcome !',
+                        title: 'Bienvenido !',
                         showConfirmButton: false,
                         timer: 1500,
                         backdrop: `rgba(0,250,0,0.6)`
@@ -67,11 +66,11 @@ export default {
                 }
             }catch (e){
                 Swal.fire({
-                title: 'Encroachment !',
+                title: 'Datos Incorrectos!  Reintentalo !',
                 width: 600,
                 padding: '3em',
                 timer: 2500,
-                backdrop: `rgba(0,0,250,0.6)`
+                backdrop: `rgba(0,125,250,0.9)`
                 });
             }
         }
