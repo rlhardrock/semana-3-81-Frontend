@@ -70,7 +70,7 @@ export default {
                 width: 600,
                 padding: '3em',
                 timer: 2500,
-                backdrop: `rgba(0,125,250,0.9)`
+                backdrop: `rgba(0,125,250,0.9) url("@/assets/tenor.gif") left top no-repeat`
                 });
             }
         }
