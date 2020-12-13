@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
 import About from '@/views/About.vue'
-import Services from '@/views/Services.vue'
+import Welcome from '@/views/Welcome.vue'
 
 Vue.use(VueRouter)
 
@@ -18,16 +18,15 @@ const routes = [
     meta:{
       requiresAuth: true
     }
-  },
-  {
+  },{
     path: '/about',
     name: 'About',
     component: () => import(/* webpackChunkName: "about" */ '@/views/About.vue')
   },{
-    path: '/services',
-    name: 'Services',
+    path: '/welcome',
+    name: 'Welcome',
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "services" */ '@/views/Services.vue')
+    component: () => import(/* webpackChunkName: "welcome" */ '@/views/Welcome.vue')
   }
 ]
 

@@ -2,8 +2,11 @@
     <div>
         <nav class="navbar navbar-light bg-dark">
             <div class="container-fluid">
+
+                <div class="spinner-border text-warning" role="status"></div>
                 <a class="navbar-brand">PG-WEB 2</a>
                 <form class="d-flex">
+                   
                 <button 
                 @click.prevent="logout"
                 class="btn btn-warning btn-lg" 
@@ -12,16 +15,15 @@
                 </form>
             </div>
         </nav>
-
         <div class="container">
-            <p>
+            <h3>
                 {{user.nombre}}
-            </p>
-            <p>
+            </h3>
+            <h4>
                 {{user.email}}
-            </p>
+            </h4>
         </div>
-
+        
     </div>
 </template>
 
@@ -30,6 +32,7 @@
 
 export default {
     name: 'HomeRun',
+  
     data(){
         return{
             user:{

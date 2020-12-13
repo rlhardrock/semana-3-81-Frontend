@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <home-run></home-run>
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    
-
+  <div class="wall">
+    <div>
+      <home-run></home-run>
+      <img alt="Vue logo" src="../assets/logo.png">
+      <HelloWorld msg="Welcome to Your Vue.js App"/>
+    </div>
   </div>
 </template>
 
@@ -21,3 +21,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.wall{
+  background-image: '@/assets/img/CyberSecurity.jpg'
+}
+</style>

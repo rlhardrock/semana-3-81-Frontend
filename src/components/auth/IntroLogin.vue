@@ -62,7 +62,7 @@ export default {
                         timer: 1500,
                         backdrop: `rgba(0,250,0,0.6)`
                         });
-                    this.$router.push('/home');
+                    this.$router.push('/welcome');
                 }
             }catch (e){
                 Swal.fire({
@@ -70,7 +70,7 @@ export default {
                 width: 600,
                 padding: '3em',
                 timer: 2500,
-                backdrop: `rgba(0,125,250,0.9) url("@/assets/tenor.gif") left top no-repeat`
+                backdrop: `rgba(0,125,250,0.9)`
                 });
             }
         }
@@ -80,5 +80,6 @@ export default {
 </script>
 
 <style scoped>
+
 
 </style>
