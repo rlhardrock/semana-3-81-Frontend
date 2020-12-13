@@ -4,8 +4,7 @@
             <div class="container-fluid">
          
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button class="btn btn-primary me-md-2" type="button">Button</button>
-                    <button class="btn btn-primary" type="button">Button</button>
+                    <button class="btn btn-dark" type="button"> </button>
                 </div>
                 <form class="d-flex">
                 <button 
@@ -16,13 +15,23 @@
                 </form>
             </div>
         </nav>
-        <div class="container">
-            <h3>
-                {{user.nombre}}
-            </h3>
-            <h4>
-                {{user.email}}
-            </h4>
+        <div class="container" background-image="linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5))">
+            
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link"><h3>{{user.nombre}}</h3></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><h3>schwarzenegger</h3></a>
+                </li>
+                <!-- <div class="spinner-border text-primary" role="status"></div> -->
+                <li class="nav-item">
+                    <a class="nav-link"><h3>{{user.email}}</h3></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><h3>{{user.profesion}}</h3></a>
+                </li>
+            </ul>
         </div>
         
     </div>
