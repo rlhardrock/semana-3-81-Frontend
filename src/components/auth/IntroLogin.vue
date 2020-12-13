@@ -62,7 +62,7 @@ export default {
                         timer: 1500,
                         backdrop: `rgba(0,250,0,0.6)`
                         });
-                    this.$router.push('/welcome');
+                    this.$router.push('/services');
                 }
             }catch (e){
                 Swal.fire({

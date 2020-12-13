@@ -2,14 +2,15 @@
     <div>
         <nav class="navbar navbar-light bg-dark">
             <div class="container-fluid">
-
-                <div class="spinner-border text-warning" role="status"></div>
-                <a class="navbar-brand">PG-WEB 2</a>
+         
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary me-md-2" type="button">Button</button>
+                    <button class="btn btn-primary" type="button">Button</button>
+                </div>
                 <form class="d-flex">
-                   
                 <button 
                 @click.prevent="logout"
-                class="btn btn-warning btn-lg" 
+                class="btn btn-warning btn-lg"
                 type="buttom">Log Out</button>
 
                 </form>

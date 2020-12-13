@@ -27,7 +27,10 @@ const routes = [
     path: '/services',
     name: 'Services',
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "services" */ '@/views/Services.vue')
+    component: () => import(/* webpackChunkName: "services" */ '@/views/Services.vue'),
+    meta:{
+      requiresAuth: true
+    }
   }
 ]
 

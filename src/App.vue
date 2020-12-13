@@ -6,7 +6,7 @@
           <router-link to="/"></router-link>
           <router-link to="/home">Home</router-link> |
           <router-link to="/about">About</router-link> |
-          <router-link to="/welcome">Welcome</router-link> 
+          <router-link to="/services">Services</router-link> 
           
         </div>
       <router-view/>
