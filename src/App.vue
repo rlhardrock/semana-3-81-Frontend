@@ -4,7 +4,8 @@
       <div id="app">
         <div id="nav">
           <router-link to="/"></router-link>
-          <!-- <router-link to="/home">Home</router-link> | -->
+          <router-link to="/home">Home</router-link> |
+          <router-link to="/about">About</router-link> |
           <router-link to="/welcome">Welcome</router-link> 
           
         </div>
@@ -16,6 +17,9 @@
 
 
 <style>
+#wallpaper {
+  background: lime;
+}
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
