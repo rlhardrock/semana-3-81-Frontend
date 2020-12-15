@@ -15,21 +15,21 @@
                 </form>
             </div>
         </nav>
-        <div class="container" background-image="linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5))">
+        <div class="container">
             
             <ul class="nav justify-content-center">
                 <li class="nav-item">
                     <a class="nav-link"><h3>{{user.nombre}}</h3></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"><h3>schwarzenegger</h3></a>
+                    <a class="nav-link"><h3>{{user.rol}}</h3></a>
                 </li>
                 <!-- <div class="spinner-border text-primary" role="status"></div> -->
                 <li class="nav-item">
                     <a class="nav-link"><h3>{{user.email}}</h3></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"><h3>{{user.profesion}}</h3></a>
+                    <a class="nav-link"><h3>{{user.status}}</h3></a>
                 </li>
             </ul>
         </div>
