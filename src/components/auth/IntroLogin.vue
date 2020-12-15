@@ -1,5 +1,6 @@
 <template>
     <div>
+    <div class="log">
         <form class="row g-3">
             <div class="col-auto">
                 <label for="staticEmail2" class="visually-hidden">email</label>
@@ -17,7 +18,7 @@
                 type="password" 
                 class="form-control" 
                 id="inputPassword2" 
-                placeholder="Password">
+                placeholder="password">
             </div>
             
             <div class="col-auto">
@@ -29,13 +30,19 @@
             
         </form>
     </div>
+    <div>
+        <seccion-banners></seccion-banners>
+    </div>
+    </div>
 </template>
 
 <script>
 
 import Swal from 'sweetalert2'
+import SeccionBanners from '@/components/SeccionBanners.vue'
 
 export default {
+    components: 'SeccionBanners',
     name: 'IntroLogin',
     data(){
         return{
@@ -80,6 +87,7 @@ export default {
 </script>
 
 <style scoped>
+
 
 
 </style>

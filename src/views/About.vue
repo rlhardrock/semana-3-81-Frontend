@@ -1,6 +1,21 @@
 <template>
-  <div class="about">
-    <h1>JUDAS PRIEST</h1>
-    <p>Rock N' Roll Around The World !</p>
+  <div>
+    
+    <div>
+      <seccion-tarjetas></seccion-tarjetas>
+    </div>
   </div>
 </template>
+
+<script>
+import SeccionTarjetas from '@/components/SeccionTarjetas.vue'
+
+export default {
+  components: { SeccionTarjetas }
+  
+}
+</script>
+
+<style scoped>
+
+</style>
