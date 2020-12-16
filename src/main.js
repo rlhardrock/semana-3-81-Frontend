@@ -4,8 +4,7 @@ import router from './router'
 import axios from 'axios'
 
 const base = axios.create({
-  baseURL : 'https://arcane-woodland-13501.herokuapp.com'
-  /* baseURL : 'http://glacial-everglades-74306.herokuapp.com' */
+  baseURL : 'http://glacial-everglades-74306.herokuapp.com'
   /* baseURL : 'http://localhost:3000' */
 })
 

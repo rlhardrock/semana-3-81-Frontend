@@ -39,7 +39,6 @@
 
 <script>
 
-import VueJwtDecode from 'vue-jwt-decode'
 
 export default {
     name: 'HomeRun',
@@ -63,11 +62,6 @@ export default {
             localStorage.removeItem('jwt');
             localStorage.removeItem('user');
             this.$router.push('/');
-        },
-        getUserData(){
-            let token = localStorage.getItem('jwt')
-            let user = VueJwtDecode.decode(token);
-            this.user = user;
         }
     },
     created(){
